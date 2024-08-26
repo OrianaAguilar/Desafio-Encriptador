@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" src="./Assets/lock.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+<body>
+    <header>
+        <img src="./Assets/Logo.png" alt="Logo de alura">
+    </header>
+    <main class="contenedor">
+        <div class="entrada-texto">
+            <textarea id="text-area" name="text-area" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="informacion">
+                <img class="signo_info" src="./Assets/exclamation.png">
+                <p class="p1">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="botonEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="area-encriptada">
+            <textarea id="mensaje" name="mensaje" class="mensaje" cols="10" rows="10"></textarea>
+            <img class="muneco" id="muneco" src="./Assets/Muñeco.png" alt="Imagen del muñeco">
+            <div class="msj-encriptado" id="msj-encriptado">
+                <h2 id="titulo-mensaje" class="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo" class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="">
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
